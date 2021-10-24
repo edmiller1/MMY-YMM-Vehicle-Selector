@@ -60,7 +60,7 @@ export const Selector = () => {
   useEffect(() => {
     fetchYears();
     fetchCarMakes();
-  }, []);
+  });
 
   /* 
     Checks whether the model array contains only 1 element. If so then it auto selects the model of vehicle.
