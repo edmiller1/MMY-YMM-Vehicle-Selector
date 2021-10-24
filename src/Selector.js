@@ -30,8 +30,6 @@ export const Selector = () => {
       setIsYearDisabled(true);
       setIsModelDisabled(true);
     }
-    console.log("isSwitched: ", isSwitched);
-    console.log("isYearDisabled: ", isYearDisabled);
   };
 
   const changeIsYearDisabled = () => {
@@ -55,12 +53,11 @@ export const Selector = () => {
     changeIsModelDisabled();
     setTimeout(() => {
       changeIsYearDisabled();
-    }, 3000);
+    }, 1500);
   };
 
   //Fetches the Years and Car Manufacturers
   useEffect(() => {
-    console.log(isSwitched);
     fetchYears();
     fetchCarMakes();
   }, []);
